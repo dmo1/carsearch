@@ -1,0 +1,35 @@
+a:link,
+a:visited,
+a:active,
+a:hover
+{
+    text-decoration: none;
+    color: black;
+    outline: none;
+}
+
+
+body
+{
+    position: relative;
+    margin: auto;
+}
+
+body.overlay::after {
+    display: block;
+    position: fixed;
+    content: " ";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 8;
+    transition: opacity .3s, visibility 0s .3s;
+}
+
+.visibility-hidden {
+    visibility: hidden;
+}

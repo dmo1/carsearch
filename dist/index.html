@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta content="maximum-scale=1.0, user-scalable=no, width=device-width, minimal-ui" name="viewport">
+        <title>Car search</title>
+        <meta name="description" content="Interview task">
+        <link rel="stylesheet" href="css/main.min.css">
+    </head>
+    <body data-component="appcomponent">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header class="header">
+            <input type="text" data-component="searchfield" data-filter-component="color" />
+            <input type="text" data-component="searchfield" data-filter-component="year" />
+            <input type="text" data-component="searchfield" data-filter-component="price" />
+        </header>
+
+        <!-- Main section -->
+        <div class="columns-container">
+            <section class="content">
+                <input type="button" class="control" id="show-modal" value="Modal window">
+
+                <select id="post-list" class="control" disabled>
+                </select>
+
+                <div class="spinner">
+                    <div class="rect1"></div>
+                    <div class="rect2"></div>
+                    <div class="rect3"></div>
+                    <div class="rect4"></div>
+                    <div class="rect5"></div>
+                </div>
+
+                <div id="post">
+                    <h2></h2>
+                    <p></p>
+                </div>
+            </section>
+        </div>
+
+
+        <script src="js/main.min.js"></script>
+
+    </body>
+</html>
